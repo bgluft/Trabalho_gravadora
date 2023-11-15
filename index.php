@@ -24,6 +24,12 @@
         <li class="nav-item">
           <a class="nav-link" href="index.php?page=listar">Listar Bandas/Artistas</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php?page=listar-genero">Genêro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php?page=listar-album">Albuns</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -33,19 +39,43 @@
   <div class="row">
     <div class="col mt-5">
       <?php
-        include("../config.php");
+        include("config.php");
         switch(@$_REQUEST["page"]){
           case "novo":
-            include("nova-banda-artista.php");
+            include("artists/nova-banda-artista.php");
           break;
           case "listar":
-            include("listar-banda-artista.php");
+            include("artists/listar-banda-artista.php");
           break;
           case "salvar":
-            include("salvar-banda-artista.php");
-            case "editar":
-              include("editar.php");
-            break;
+            include("artists/salvar-banda-artista.php");
+          break;
+          case "editar":
+            include("artists/editar.php");
+          break;
+          case "cadastrar-genero":
+            include("genres/cadastrar-genero.php");
+          break;
+          case "editar-genero":
+            include("genres/editar-genero.php");
+          break;
+          case "listar-genero":
+            include("genres/listar-genero.php");
+          break;
+          case "salvar-genero":
+            include("genres/salvar-genero.php");
+          break;
+          case "cadastrar-album":
+            include("albuns/cadastrar-album.php");
+          break;
+          case "editar-album":
+            include("albuns/editar-album.php");
+          break;
+          case "listar-album":
+            include("albuns/listar-album.php");
+          break;
+          case "salvar-album":
+            include("albuns/salvar-album.php");
           break;
           default:
           print "<h1>Bem vindos!</h1>";

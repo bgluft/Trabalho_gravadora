@@ -1,6 +1,6 @@
 <?php
     switch ($_REQUEST["acao"]) {
-        case 'novo-album':
+        case 'cadastar':
             $name = $_POST["name"];
             $description = $_POST["description"];
             $release_date = $_POST["release_date"];

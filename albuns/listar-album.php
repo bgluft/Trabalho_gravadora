@@ -1,4 +1,4 @@
-<h1>Listar banda/Artista</h1>
+<h1>Listar album</h1>
 
 <?php
     $sql = "SELECT * FROM albuns";
