@@ -21,7 +21,7 @@
     </div>
     <div class="mb-3">
         <label>Data</label>
-        <input type="number" id="release_data" min="1900" max="2030" name="release_data" class="form-control">
+        <input type="number" id="release_date" min="1900" max="2030" name="release_data" class="form-control">
     </div>
     <div class="mb-3">
     <label for="artist">Genêro: </label>

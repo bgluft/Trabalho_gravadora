@@ -1,6 +1,6 @@
 <?php
-    switch ($_REQUEST["acao"]) {
-        case 'cadastar':
+    switch ($_REQUEST['acao']) {
+        case 'cadastrar':
             $name = $_POST["name"];
             $description = $_POST["description"];
             $release_date = $_POST["release_date"];

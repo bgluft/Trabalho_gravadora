@@ -38,3 +38,6 @@
         print "<p class='alert alert-danger'>Não encontrou resultados!</p>";
     }
 ?>
+<div class="d-flex justify-content-center">
+<button  onclick="location.href='?page=cadastrar-album'" class="btn btn-primary">Adicionar</button>
+</div>
