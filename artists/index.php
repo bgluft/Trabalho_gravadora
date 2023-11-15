@@ -33,7 +33,7 @@
   <div class="row">
     <div class="col mt-5">
       <?php
-        include("config.php");
+        include("../config.php");
         switch(@$_REQUEST["page"]){
           case "novo":
           include("nova-banda-artista.php");
