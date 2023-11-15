@@ -2,6 +2,6 @@
     define('host', 'localhost');
     define('user', 'root');
     define('pass', '');
-    define('base', 'curso_youtube');
+    define('base', 'gravadora');
 
     $conn = new MySQLi(host, user, pass, base);

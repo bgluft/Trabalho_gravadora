@@ -24,6 +24,9 @@
         <li class="nav-item">
           <a class="nav-link" href="index.php?page=listar">Listar Bandas/Artistas</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php?page=listar-genero">Genêros</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -36,16 +39,27 @@
         include("../config.php");
         switch(@$_REQUEST["page"]){
           case "novo":
-          include("nova-banda-artista.php");
+            include("nova-banda-artista.php");
           break;
           case "listar":
-          include("listar-banda-artista.php");
+            include("listar-banda-artista.php");
           break;
           case "salvar":
             include("salvar-banda-artista.php");
-            case "editar":
-              include("editar.php");
-            break;
+          case "editar":
+            include("editar.php");
+          break;
+          case "listar-genero":
+            include("../genres/listar-genero.php");
+          break;
+          case "cadastrar-genero":
+            include("../genres/cadastrar-genero.php");
+          break;
+          case "editar-genero":
+            include("../genres/editar-genero.php");
+          break;
+          case "salvar-genero":
+            include("../genres/salvar-genero.php");
           break;
           default:
           print "<h1>Bem vindos!</h1>";
