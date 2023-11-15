@@ -24,6 +24,13 @@
         <li class="nav-item">
           <a class="nav-link" href="index.php?page=listar">Listar Bandas/Artistas</a>
         </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php?page=novo-album">Albuns</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php?page=listar-album">Listar Albuns</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -46,7 +53,12 @@
             case "editar":
               include("editar.php");
             break;
-          break;
+            case "novo-album":
+              include("../albuns/novo-album.php");
+            break;
+            case "listar-album":
+              include("../albuns/listar-album.php");
+            break;
           default:
           print "<h1>Bem vindos!</h1>";
       }
