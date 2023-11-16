@@ -21,11 +21,11 @@
     </div>
     <div class="mb-3">
         <label>Data</label>
-        <input type="number" id="release_date" min="1900" max="2030" name="release_data" class="form-control">
+        <input type="number" id="release_date" min="1900" max="2030" name="release_date" class="form-control">
     </div>
     <div class="mb-3">
-    <label for="artist">Genêro: </label>
-        <select class="form-select">
+    <label for="genre">Genêro: </label>
+        <select class="form-select" name="genre">
            <?php
                 if ($genre->num_rows > 0){
                     print "<option selected></option>";
@@ -40,7 +40,7 @@
     </div>
     <div class="mb-3">
     <label for="artist">Artista: </label>
-        <select class="form-select">
+        <select class="form-select" name="artist">
            <?php
                 if ($artist->num_rows > 0){
                     print "<option selected></option>";
