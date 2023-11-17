@@ -5,3 +5,4 @@
     define('base', 'gravadora');
 
     $conn = new MySQLi(host, user, pass, base);
+?>

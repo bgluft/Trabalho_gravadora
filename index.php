@@ -19,7 +19,7 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?page=listar">Artista</a>
+          <a class="nav-link" href="index.php?page=listar-artista">Artista</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.php?page=listar-genero">Genêros</a>
@@ -38,17 +38,17 @@
       <?php
         include("config.php");
         switch(@$_REQUEST["page"]){
-          case "novo":
-            include("artists/nova-banda-artista.php");
+          case "cadastrar-artista":
+            include("artists/cadastrar-artista.php");
           break;
-          case "listar":
-            include("artists/listar-banda-artista.php");
+          case "listar-artista":
+            include("artists/listar-artista.php");
           break;
-          case "salvar":
-            include("artists/salvar-banda-artista.php");
+          case "salvar-artista":
+            include("artists/salvar-artista.php");
           break;
-          case "editar":
-            include("artists/editar.php");
+          case "editar-artista":
+            include("artists/editar-artista.php");
           break;
           case "cadastrar-genero":
             include("genres/cadastrar-genero.php");

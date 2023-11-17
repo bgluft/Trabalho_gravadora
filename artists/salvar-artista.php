@@ -11,10 +11,10 @@
             $res = $conn->query($sql);
             if($res==true) {
                 print "<script>alert('Banda/Artista cadastrado com sucesso!');</script>";
-                print "<script>location.href='?page=listar';</script>";
+                print "<script>location.href='?page=listar-artista';</script>";
             } else {
                 print "<script>alert('Não foi possível fazer cadastro');</script>";
-                print "<script>location.href='?page=listar';</script>";
+                print "<script>location.href='?page=listar-artista';</script>";
             }
         break;
 
@@ -28,10 +28,10 @@
             $res = $conn->query($sql);
             if($res==true) {
                 print "<script>alert('Banda/Artista editado com sucesso!');</script>";
-                print "<script>location.href='?page=listar';</script>";
+                print "<script>location.href='?page=listar-artista';</script>";
             } else {
                 print "<script>alert('Não foi possível editar cadastro');</script>";
-                print "<script>location.href='?page=listar';</script>";
+                print "<script>location.href='?page=listar-artista';</script>";
             }
         break;
 
@@ -43,10 +43,10 @@
         
             if ($res==true) {
                 print "<script>alert('Excluído com sucesso!');</script>";
-                print "<script>location.href='?page=listar';</script>";
+                print "<script>location.href='?page=listar-artista';</script>";
             } else {
                 print "<script>alert('Não foi possível excluir');</script>";
-                print "<script>location.href='?page=listar';</script>";
+                print "<script>location.href='?page=listar-artista';</script>";
             }
             break;
         

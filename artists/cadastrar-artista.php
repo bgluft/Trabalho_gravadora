@@ -1,5 +1,5 @@
 <h1>Nova banda/Artista</h1>
-<form action="?page=salvar" method="post">
+<form action="?page=salvar-artista" method="post">
     <input type="hidden" name="acao" value="cadastrar">
     <div class="mb-3">
         <label>nome</label>

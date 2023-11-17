@@ -4,7 +4,7 @@
     $res = $conn->query($sql);
     $row = $res->fetch_object();
 ?>
-<form action="?page=salvar" method="post">
+<form action="?page=salvar-artista" method="post">
     <input type="hidden" name="acao" value="editar">
     <input type="hidden" name="id" value="<?php print $row->id; ?>">
     <div class="mb-3">
