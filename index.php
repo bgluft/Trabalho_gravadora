@@ -27,6 +27,9 @@
         <li class="nav-item">
           <a class="nav-link" href="index.php?page=listar-album">Albuns</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php?page=listar-musica">Músicas</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -73,6 +76,18 @@
           break;
           case "salvar-album":
             include("albuns/salvar-album.php");
+          break;
+          case "cadastrar-musica":
+            include("musics/cadastrar-musica.php");
+          break;
+          case "editar-musica":
+            include("musics/editar-musica.php");
+          break;
+          case "listar-musica":
+            include("musics/listar-musica.php");
+          break;
+          case "salvar-musica":
+            include("musics/salvar-musica.php");
           break;
           default:
           print "<h1>Bem vindos!</h1>";
