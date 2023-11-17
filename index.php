@@ -19,13 +19,10 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?page=novo">Nova Banda/Artista</a>
+          <a class="nav-link" href="index.php?page=listar">Artista</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?page=listar">Listar Bandas/Artistas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.php?page=listar-genero">Genêro</a>
+          <a class="nav-link" href="index.php?page=listar-genero">Genêros</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.php?page=listar-album">Albuns</a>

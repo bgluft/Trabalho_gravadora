@@ -1,7 +1,20 @@
 <h1>Listar album</h1>
 
 <?php
-    $sql = "SELECT * FROM albuns";
+    $sql = "
+    SELECT
+        al.id, al.name as album_name, al.description, al.release_date, g.name as genre_name,  ar.name as artist_name
+    FROM
+        albuns as al
+    INNER JOIN
+        genres as g
+    ON
+        g.id = al.genre
+    INNER JOIN
+        artists as ar
+    ON
+        al.artist = ar.id
+ 	";
     
     $res = $conn->query($sql);
 
@@ -21,11 +34,11 @@
         while ($row = $res->fetch_object()) {
             print "<tr>";
             print "<td>" . $row->id . "</td>";
-            print "<td>" . $row->name . "</td>";
+            print "<td>" . $row->album_name . "</td>";
             print "<td>" . $row->description . "</td>";
             print "<td>" . $row->release_date . "</td>";
-            print "<td>" . $row->genre . "</td>";
-            print "<td>" . $row->artist . "</td>";
+            print "<td>" . $row->genre_name . "</td>";
+            print "<td>" . $row->artist_name . "</td>";
             print "<td>
                        <button onclick=\"location.href='?page=editar-album&id=" . $row->id . "';\" class='btn btn-success'>Editar</button>
 
