@@ -7,7 +7,10 @@
     </div>
     <div class="mb-3">
         <label>Artista/Banda</label>
-        <input type="text" name="band_artist" class="form-control">
+        <select name="band_artist" class="form-control">
+            <option value="a">Artista</option>
+            <option value="b">Banda</option>
+        </select>
     </div>
     <div class="mb-3">
         <label>Ano Nascimento</label>

@@ -20,7 +20,7 @@
             print "<tr>";
             print "<td>" . $row->id . "</td>";
             print "<td>" . $row->name . "</td>";
-            print "<td>" . $row->band_artist . "</td>";
+            print "<td>" .($row->band_artist == 'a'? "Artista" : "Banda") . "</td>";
             print "<td>" . $row->birth_formation . "</td>";
             print "<td>
                        <button onclick=\"location.href='?page=editar&id=" . $row->id . "';\" class='btn btn-success'>Editar</button>
