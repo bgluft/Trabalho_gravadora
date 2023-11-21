@@ -33,9 +33,9 @@
                         print "<option value=$row->id>$row->name</option>";
                     }
                 } else {
-                    print "<option>Nenhum album cadastrado</option>";
+                    print "<option>Nenhum gênero cadastrado</option>";
                 }
-                    ?>
+            ?>
         </select>    
     </div>
     <div class="mb-3">
