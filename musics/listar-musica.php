@@ -36,7 +36,7 @@
             print "<td>" . $row->artist_name . "</td>";
             print "<td>" . $row->album_name . "</td>";
             print "<td>
-                        <button onclick=\"location.href='?page=editar-music&id=" . $row->id . "';\" class='btn btn-success'>Editar</button>
+                        <button onclick=\"location.href='?page=editar-musica&id=" . $row->id . "';\" class='btn btn-success'>Editar</button>
 
                         <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=salvar-musica&acao=excluir&id=" . $row->id . "';}else{return false;}\" class='btn btn-danger'>Excluir</button>
                     </td>";
