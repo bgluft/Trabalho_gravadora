@@ -13,7 +13,7 @@
 ?>
 
 <h1>Cadastrar música:</h1>
-<form action="?page=salvar-musicas" method="post">
+<form action="?page=salvar-musica" method="post">
     <input type="hidden" name="acao" value="cadastrar">
 
     <div class="mb-3">

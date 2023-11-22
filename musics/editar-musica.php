@@ -1,6 +1,6 @@
 <h1>Editar música!</h1>
 <?php
-    $sql = "SELECT * FROM musics";
+    $sql = "SELECT * FROM musics WHERE id =". $_REQUEST['id'];
     $res = $conn->query($sql);
     $music = $res->fetch_object();
 
@@ -18,9 +18,11 @@
 ?>
 
 <form action="?page=salvar-musica" method="post">
+    <input type="hidden" name="acao" value="editar">
+    <input type="hidden" name="id" value="<?php print $music->id ?>">
     <div class="mb-3">
         <label>Nome:</label>
-        <input type="text" class="form-control" value="<?php print $music->name; ?>">
+        <input type="text" name="name" class="form-control" value="<?php print $music->name; ?>">
     </div>
     <div class="mb-3">
         <label>Álbum:</label>
@@ -35,5 +37,8 @@
                 }
             ?>
         </select>
+    </div>
+    <div class="mb-3">
+        <button type="sumit" class="btn btn-primary">Enviar</button>
     </div>
 </form>

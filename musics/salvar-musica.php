@@ -4,7 +4,7 @@
             $name = $_POST["name"];
             $album= $_POST["album"];
 
-            $sql = "INSERT INTO musics (name, genre, artists, albuns) 
+            $sql = "INSERT INTO musics (name, album) 
             VALUES ('{$name}', '{$album}')";
 
             $res = $conn->query($sql);
@@ -18,11 +18,11 @@
 
         break;
 
-        case 'nova-musica':
+        case 'editar':
             $name = $_POST["name"];
             $album = $_POST["album"];
             
-            $sql = "UPDATE musics SET name='{$name}', album='{$album}' WHERE id=" . $_REQUEST["id"];
+            $sql = "UPDATE musics SET name='{$name}', album={$album} WHERE id=". $_POST['id'];
 
             $res = $conn->query($sql);
             if($res==true) {
