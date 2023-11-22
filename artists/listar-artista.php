@@ -23,9 +23,9 @@
             print "<td>" .($row->band_artist == 'a'? "Artista" : "Banda") . "</td>";
             print "<td>" . $row->birth_formation . "</td>";
             print "<td>
-                       <button onclick=\"location.href='?page=editar&id=" . $row->id . "';\" class='btn btn-success'>Editar</button>
+                       <button onclick=\"location.href='?page=editar-artista&id=" . $row->id . "';\" class='btn btn-success'>Editar</button>
 
-                       <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=salvar-salvar&acao=excluir&id=" . $row->id . "';}else{return false;}\" class='btn btn-danger'>Excluir</button>
+                       <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=salvar-artista&acao=excluir&id=" . $row->id . "';}else{return false;}\" class='btn btn-danger'>Excluir</button>
                    </td>";
             print "</tr>";
         }
