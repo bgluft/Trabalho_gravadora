@@ -21,14 +21,14 @@
 
         break;
 
-        case 'novo-album':
+        case 'editar':
             $name = $_POST["name"];
             $description = $_POST["description"];
             $release_date = $_POST["release_date"];
             $genre = $_POST["genre"];
             $artist = $_POST["artist"];
             
-            $sql = "UPDATE artists SET name='{$name}', description='{$description}', release_date='{$release_date}, genre='{$genre}, artist='{$artist}' WHERE id=" . $_REQUEST["id"];
+            $sql = "UPDATE albuns SET name='{$name}', description='{$description}', release_date='{$release_date}', genre='{$genre}', artist='{$artist}' WHERE id=" . $_REQUEST["id"];
 
             $res = $conn->query($sql);
             if($res==true) {
