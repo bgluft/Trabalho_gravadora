@@ -1,4 +1,4 @@
-<h1>Listar album</h1>
+<h1>Álbuns</h1>
 
 <?php
     $sql = "

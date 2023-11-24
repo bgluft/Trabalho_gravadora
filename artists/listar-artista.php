@@ -1,4 +1,4 @@
-<h1>Listar banda/Artista</h1>
+<h1>Bandas e artistas solo</h1>
 
 <?php
     $sql = "SELECT * FROM artists";
