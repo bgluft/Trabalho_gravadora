@@ -8,12 +8,15 @@
     <input type="hidden" name="acao" value="editar">
     <input type="hidden" name="id" value="<?php print $row->id; ?>">
     <div class="mb-3">
-        <label>nome</label>
+        <label>Nome:</label>
         <input type="text" name="name" value="<?php print $row->name; ?>" class="form-control">
     </div>
     <div class="mb-3">
-        <label>Artista/Banda</label>
-        <input type="text" name="band_artist" value="<?php print $row->band_artist; ?>" class="form-control">
+    <label>Tipo: </label>
+        <select name="band_artist" class="form-control">
+            <option <?php print $row->band_artist == "a"? "selected" : "" ?> value="a">Artista</option>
+            <option <?php print $row->band_artist == "b"? "selected" : "" ?> value="b">Banda</option>
+        </select>
     </div>
     <div class="mb-3">
         <label>Ano Nascimento</label>
