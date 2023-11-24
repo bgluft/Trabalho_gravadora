@@ -26,6 +26,8 @@
             print "</tr>";
         }
         print "</table>";
+    } else {
+        print "<p class='alert alert-danger'>Não encontrou resultados!</p>";
     }
 ?>
 <div class="d-flex justify-content-center">

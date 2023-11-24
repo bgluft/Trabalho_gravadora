@@ -13,7 +13,7 @@
         print "<th>ID</th>";
         print "<th>Nome</th>";
         print "<th>Banda/Artista</th>";
-        print "<th>Data Formação</th>";
+        print "<th>Ano de nascimento/formação</th>";
         print "<th>Ações</th>";
         print "</tr>";
         while ($row = $res->fetch_object()) {
