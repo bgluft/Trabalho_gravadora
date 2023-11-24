@@ -1,4 +1,4 @@
-<h1>Editar música!</h1>
+<h1>Editar música</h1>
 <?php
     $sql = "SELECT * FROM musics WHERE id =". $_REQUEST['id'];
     $res = $conn->query($sql);

@@ -1,4 +1,4 @@
-<h1>Editar banda/Artista</h1>
+<h1>Editar banda/artista</h1>
 <?php
     $sql = "SELECT * FROM artists WHERE id=".$_REQUEST["id"];
     $res = $conn->query($sql);
@@ -19,7 +19,7 @@
         </select>
     </div>
     <div class="mb-3">
-        <label>Ano Nascimento</label>
+        <label>Ano de nascimento / formação:</label>
         <input type="number" id="ano" min="1900" max="2030" name="birth_formation" value="<?php print $row->birth_formation; ?>" class="form-control">
     </div>
     <div class="mb-3">

@@ -7,7 +7,7 @@
 
             $res = $conn->query($sql);
             if($res==true) {
-                print "<script>alert('Genêro cadastrado com sucesso!');</script>";
+                print "<script>alert('Gênero cadastrado com sucesso!');</script>";
                 print "<script>location.href='?page=listar-genero';</script>";
             } else {
                 print "<script>alert('Não foi possível fazer cadastro');</script>";
@@ -21,7 +21,7 @@
 
             $res = $conn->query($sql);
             if($res==true) {
-                print "<script>alert('Genêro editado com sucesso!');</script>";
+                print "<script>alert('Gênero editado com sucesso!');</script>";
                 print "<script>location.href='?page=listar-genero';</script>";
             } else {
                 print "<script>alert('Não foi possível editar cadastro');</script>";

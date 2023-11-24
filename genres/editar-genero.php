@@ -1,4 +1,4 @@
-<h1>Editar genêro</h1>
+<h1>Editar gênero</h1>
 
 <?php
     $sql = "SELECT * FROM genres WHERE id =".$_REQUEST["id"];
@@ -10,7 +10,7 @@
     <input type="hidden" name="acao" value="editar">
     <input type="hidden" name="id" value="<?php print $row->id; ?>">
     <div class="mb-3">
-        <label>Nome</label>
+        <label>Nome:</label>
         <input type="text" name="name" value="<?php print $row->name; ?>" class="form-control">
     </div>
     <div class="mb-3">

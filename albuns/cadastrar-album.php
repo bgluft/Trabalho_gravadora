@@ -8,23 +8,23 @@
     $genre = $conn->query($sql);
 ?>
 
-<h1>Novo album!</h1>
+<h1>Novo álbum</h1>
 <form action="?page=salvar-album" method="post">
     <input type="hidden" name="acao" value="cadastrar">
     <div class="mb-3">
-        <label>Nome do Album</label>
+        <label>Nome do álbum:</label>
         <input type="text" name="name" class="form-control">
     </div>
     <div class="mb-3">
-        <label>Descrição</label>
+        <label>Descrição:</label>
         <input type="text" name="description" class="form-control">
     </div>
     <div class="mb-3">
-        <label>Data</label>
+        <label>Ano de lançamento:</label>
         <input type="number" id="release_date" min="1900" max="2030" name="release_date" class="form-control">
     </div>
     <div class="mb-3">
-    <label for="genre">Genêro: </label>
+    <label for="genre">Gênero: </label>
         <select class="form-select" name="genre">
            <?php
                 if ($genre->num_rows > 0){

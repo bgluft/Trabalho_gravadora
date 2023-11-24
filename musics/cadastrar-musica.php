@@ -12,7 +12,7 @@
     $album = $conn->query($sql);
 ?>
 
-<h1>Cadastrar música:</h1>
+<h1>Nova música</h1>
 <form action="?page=salvar-musica" method="post">
     <input type="hidden" name="acao" value="cadastrar">
 

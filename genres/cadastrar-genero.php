@@ -1,4 +1,4 @@
-<h1>Cadastrar genêro</h1>
+<h1>Novo gênero</h1>
 
 <form action="?page=salvar-genero" method="post">
     <input type="hidden" name="acao" value="cadastrar">

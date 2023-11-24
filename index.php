@@ -22,10 +22,10 @@
           <a class="nav-link" href="index.php?page=listar-artista">Artista</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?page=listar-genero">Genêros</a>
+          <a class="nav-link" href="index.php?page=listar-genero">Gêneros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?page=listar-album">Albuns</a>
+          <a class="nav-link" href="index.php?page=listar-album">Álbuns</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.php?page=listar-musica">Músicas</a>
